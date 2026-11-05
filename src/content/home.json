@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Home | Aerolex",
+    "description": "Comprehensive consultancy, training, and safety compliance services designed to elevate your aviation operations to the highest standards."
+  },
+  "hero": {
+    "heading": "Expert Aviation Solutions",
+    "accent": "For Global Operators",
+    "description": "<p>Comprehensive consultancy, training, and safety compliance services designed to elevate your aviation operations to the highest standards.</p>",
+    "image": {
+      "src": "/images/figma/home/imgImg6.png",
+      "alt": "Sunlight above clouds at sunset"
+    },
+    "button": {
+      "label": "Discover",
+      "href": "#services"
+    }
+  },
+  "stats": [
+    {
+      "value": "150+",
+      "label": "Operators Supported"
+    },
+    {
+      "value": "25+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "40+",
+      "label": "Countries Served"
+    },
+    {
+      "value": "98%",
+      "label": "Client Satisfaction"
+    }
+  ],
+  "services": {
+    "heading": "What We Do",
+    "description": "We provide end-to-end aviation solutions that help operators achieve compliance, improve safety, and enhance operational excellence.",
+    "items": [
+      {
+        "heading": "Consultancy",
+        "body": "<p>AOC setup, regulatory compliance, and CAA advisory services for aviation operators.</p>",
+        "icon": "/images/figma/home/imgGroup.svg",
+        "button": {
+          "label": "Learn more",
+          "href": "/consultancy/"
+        }
+      },
+      {
+        "heading": "Training",
+        "body": "<p>CRM, regulatory compliance, IOSA auditor, and bespoke training programmes.</p>",
+        "icon": "/images/figma/home/imgGroup2.svg",
+        "button": {
+          "label": "Learn more",
+          "href": "/training/"
+        }
+      },
+      {
+        "heading": "Safety & Compliance",
+        "body": "<p>SMS design, risk assessment, IOSA audits, and flight data monitoring solutions.</p>",
+        "icon": "/images/figma/home/imgGroup4.svg",
+        "button": {
+          "label": "Learn more",
+          "href": "/safety-and-compliance/"
+        }
+      }
+    ]
+  },
+  "process": {
+    "heading": "How We Work",
+    "description": "A proven four-step approach that delivers measurable results for every client engagement.",
+    "items": [
+      {
+        "number": "01",
+        "heading": "Initial Assessment",
+        "body": "<p>We conduct a thorough review of your current operations, documentation, and compliance status to identify gaps and opportunities.</p>"
+      },
+      {
+        "number": "02",
+        "heading": "Customised Strategy",
+        "body": "<p>Based on our findings, we develop a tailored action plan that aligns with your goals and regulatory requirements.</p>"
+      },
+      {
+        "number": "03",
+        "heading": "Implementation",
+        "body": "<p>Our team works alongside yours to implement solutions, deliver training, and establish systems with hands-on support.</p>"
+      },
+      {
+        "number": "04",
+        "heading": "Ongoing Support",
+        "body": "<p>We provide continuous monitoring, audits, and advisory services to ensure sustained compliance and improvement.</p>"
+      }
+    ]
+  },
+  "feature": {
+    "eyebrow": "Why Choose Us",
+    "heading": "Decades of Real-World Aviation Experience",
+    "body": "<p>Our consultants are not just academics. They are former airline executives, CAA inspectors, and flight operations managers who have lived the challenges you face. This hands-on experience means our advice is practical, actionable, and grounded in reality.</p><p>From startup operators seeking their first AOC to established carriers optimising complex safety systems, we bring the same depth of expertise and commitment to every engagement.</p>",
+    "image": {
+      "src": "/images/figma/home/imgImg172.png",
+      "alt": "Aviation operations control room with monitoring screens"
+    },
+    "button": {
+      "label": "Learn more about us",
+      "href": "/about/"
+    },
+    "stats": []
+  },
+  "partners": {
+    "heading": "Trusted by Leading Aviation Organisations",
+    "names": [
+      "Airbus",
+      "Boeing",
+      "IATA",
+      "ICAO",
+      "EASA",
+      "FAA",
+      "IS-BAO",
+      "IOSA"
+    ]
+  },
+  "arrow": "/images/figma/home/imgGroup3.svg"
+}

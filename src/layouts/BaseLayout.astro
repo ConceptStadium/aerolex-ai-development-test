@@ -1,0 +1,9 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+interface Props { title: string; description: string; solidHeader?:boolean; }
+const {title,description} = Astro.props;
+---
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><meta name="description" content={description} /><title>{title}</title><link rel="preload" href="/fonts/bai-jamjuree-400.ttf" as="font" type="font/ttf" crossorigin /><meta name="generator" content={Astro.generator} /></head><body class:list={{'solid-header':Astro.props.solidHeader}}><Header /><slot /><Footer /></body></html>

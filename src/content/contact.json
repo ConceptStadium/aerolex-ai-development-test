@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "title": "Contact Us | Aerolex",
+    "description": "Reach out to discuss how we can support your aviation operations. Our team is ready to help."
+  },
+  "hero": {
+    "heading": "Contact Us",
+    "accent": "",
+    "description": "<p>Reach out to discuss how we can support your aviation operations. Our team is ready to help.</p>",
+    "image": {
+      "src": "/images/figma/contact/imgImg6.png",
+      "alt": "Office reception with a world map and seating area"
+    },
+    "button": {
+      "label": "",
+      "href": ""
+    }
+  },
+  "details": [
+    {
+      "heading": "Email",
+      "icon": "/images/figma/contact/imgGroup.svg",
+      "lines": [
+        {
+          "label": "info@aviationpartners.com",
+          "href": "mailto:info@aviationpartners.com"
+        },
+        {
+          "label": "support@aviationpartners.com",
+          "href": "mailto:support@aviationpartners.com"
+        }
+      ]
+    },
+    {
+      "heading": "Phone",
+      "icon": "/images/figma/contact/imgGroup1.svg",
+      "lines": [
+        {
+          "label": "+1 (555) 123-4567",
+          "href": "tel:+15551234567"
+        },
+        {
+          "label": "+1 (555) 987-6543",
+          "href": "tel:+15559876543"
+        }
+      ]
+    },
+    {
+      "heading": "Office",
+      "icon": "/images/figma/contact/imgGroup2.svg",
+      "lines": [
+        {
+          "label": "123 Aviation Way, Suite 400",
+          "href": ""
+        },
+        {
+          "label": "New York, NY 10001, USA",
+          "href": ""
+        }
+      ]
+    }
+  ],
+  "form": {
+    "heading": "Send Us a Message",
+    "description": "We will respond within 24 business hours.",
+    "fields": [
+      {
+        "name": "fullName",
+        "label": "Full Name",
+        "placeholder": "Your name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "placeholder": "your@email.com",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "company",
+        "label": "Company",
+        "placeholder": "Your company",
+        "type": "text",
+        "required": false
+      },
+      {
+        "name": "service",
+        "label": "Service Interest",
+        "placeholder": "Select a service",
+        "type": "select",
+        "required": false
+      },
+      {
+        "name": "message",
+        "label": "Message",
+        "placeholder": "Tell us about your needs...",
+        "type": "textarea",
+        "required": true
+      }
+    ],
+    "services": [
+      "Consultancy",
+      "Training",
+      "Safety & Compliance"
+    ],
+    "selectIcon": "/images/figma/contact/imgSelectIcon92.svg",
+    "buttonLabel": "Send Message",
+    "previewNotice": "Local preview: this form validates your message but does not send it.",
+    "validatedMessage": "Your message is valid but has not been sent. Email delivery is not configured for this local preview.",
+    "validationMessage": "Please complete the required fields with valid information.",
+    "noScriptMessage": "Enable JavaScript to validate this preview form. No message will be sent."
+  }
+}

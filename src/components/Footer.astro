@@ -1,0 +1,16 @@
+---
+import { footer } from '../lib/content';
+import ContentLink from './ContentLink.astro';
+---
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img class="footer-logo" src={footer.logo.src} alt={footer.logo.alt} />
+    <div class="footer-grid">
+      <p class="footer-description">{footer.description}</p>
+      {footer.groups.map(group => <div><h2>{group.heading}</h2><ul>{group.links.map(link => <li><ContentLink href={link.href}>{link.label}</ContentLink></li>)}</ul></div>)}
+      <div><h2>{footer.contactHeading}</h2><ul>{footer.contacts.map(contact => <li><ContentLink href={contact.href} class="contact-item"><img class="figma-icon" src={contact.icon} alt="" />{contact.label}</ContentLink></li>)}</ul></div>
+    </div>
+    <div class="socials">{footer.socials.map(social => <ContentLink href={social.href} label={social.label}><img class="figma-icon" src={social.icon} alt="" /></ContentLink>)}</div>
+    <div class="footer-bottom"><p>{footer.copyright}</p><p>{footer.credit}</p></div>
+  </div>
+</footer>

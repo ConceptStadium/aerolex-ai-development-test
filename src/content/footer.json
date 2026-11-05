@@ -1,0 +1,92 @@
+{
+  "logo": {
+    "src": "/images/aerolex-logo.svg",
+    "alt": "Aerolex"
+  },
+  "description": "Expert aviation consultancy, training, and safety compliance services for operators worldwide.",
+  "groups": [
+    {
+      "heading": "Company",
+      "links": [
+        {
+          "label": "About",
+          "href": "/about/"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog/"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact/"
+        }
+      ]
+    },
+    {
+      "heading": "Services",
+      "links": [
+        {
+          "label": "Consultancy",
+          "href": "/consultancy/"
+        },
+        {
+          "label": "Training",
+          "href": "/training/"
+        },
+        {
+          "label": "Safety & Compliance",
+          "href": "/safety-and-compliance/"
+        }
+      ]
+    },
+    {
+      "heading": "Legal",
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy-policy/"
+        },
+        {
+          "label": "Cookie Policy",
+          "href": "/cookie-policy/"
+        },
+        {
+          "label": "Terms and Conditions",
+          "href": "/terms-and-conditions/"
+        }
+      ]
+    }
+  ],
+  "contactHeading": "Contact",
+  "contacts": [
+    {
+      "label": "info@aviationpartners.com",
+      "href": "mailto:info@aviationpartners.com",
+      "icon": "/images/email.svg"
+    },
+    {
+      "label": "+1 (555) 123-4567",
+      "href": "tel:+15551234567",
+      "icon": "/images/phone.svg"
+    },
+    {
+      "label": "123 Aviation Way, Suite 400",
+      "href": "/contact/#contact-details",
+      "icon": "/images/location.svg"
+    }
+  ],
+  "socials": [
+    {
+      "label": "LinkedIn",
+      "href": "",
+      "icon": "/images/linkedin.svg"
+    },
+    {
+      "label": "X",
+      "href": "",
+      "icon": "/images/x.svg"
+    }
+  ],
+  "copyright": "2026 Aerolex. All rights reserved.",
+  "credit": "Concept Stadium I Crafting Web Solutions"
+}

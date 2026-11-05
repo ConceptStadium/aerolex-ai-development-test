@@ -1,0 +1,7 @@
+---
+import {training,type Course} from '../lib/content';
+import ListingCard from './ListingCard.astro';
+interface Props {course:Course}
+const {course}=Astro.props;
+---
+<ListingCard item={course} href={`/training/${course.slug}/`} label={training.readMoreLabel} arrow={training.arrow}/>

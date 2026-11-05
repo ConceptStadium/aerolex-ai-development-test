@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import RichText from '../components/RichText.astro';
+import Button from '../components/Button.astro';
+import {legalPages} from '../lib/content';
+export function getStaticPaths(){return legalPages.map(page=>({params:{legal:page.slug},props:{page}}))}
+const {page}=Astro.props;
+---
+<BaseLayout title={`${page.title} | Aerolex`} description={page.title} solidHeader><main id="main" class="notice-page"><h1>{page.title}</h1><RichText content={page.body}/><Button href="/contact/" label={page.contactLabel}/></main></BaseLayout>

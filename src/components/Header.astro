@@ -1,0 +1,20 @@
+---
+import {navigation as nav} from '../lib/content';
+const path=Astro.url.pathname;
+const active=(href:string)=>href==='/'?path==='/':path.startsWith(href);
+---
+<a class="skip-link" href="#main">{nav.skipLabel}</a>
+<header class="site-header">
+  <a href={nav.homeHref} class="brand"><img src={nav.logo.src} alt={nav.logo.alt} /></a>
+  <nav aria-label={nav.label} class="desktop-nav">
+    {nav.items.map(item=><div class="nav-item">
+      <a href={item.href} aria-current={active(item.href)?'page':undefined}>{item.label}</a>
+      {item.children.length>0&&<details class="nav-dropdown"><summary aria-label={item.label}><img class="figma-icon" src={nav.chevron} alt="" /></summary><ul>{item.children.map(child=><li><a href={child.href}>{child.label}</a></li>)}</ul></details>}
+    </div>)}
+  </nav>
+  <details class="mobile-nav"><summary>{nav.menuLabel}</summary><nav aria-label={nav.label}>{nav.items.map(item=><a href={item.href} aria-current={active(item.href)?'page':undefined}>{item.label}</a>)}</nav></details>
+</header>
+<script>
+  document.addEventListener('keydown',(event)=>{if(event.key==='Escape')document.querySelectorAll<HTMLDetailsElement>('.site-header details[open]').forEach(details=>{details.open=false;details.querySelector('summary')?.focus()})});
+  document.addEventListener('click',(event)=>{const target=event.target;if(target instanceof Element)document.querySelectorAll<HTMLDetailsElement>('.site-header details[open]').forEach(details=>{if(!details.contains(target))details.open=false})});
+</script>

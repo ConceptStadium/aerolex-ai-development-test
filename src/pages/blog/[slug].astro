@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import RichText from '../../components/RichText.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import {blog,posts,type Post} from '../../lib/content';
+export function getStaticPaths(){return posts.map(post=>({params:{slug:post.slug},props:{post}}))}
+interface Props {post:Post}
+const {post}=Astro.props;
+const related=posts.filter(item=>item.slug!==post.slug).slice(0,4);
+---
+<BaseLayout title={`${post.title} | Aerolex`} description={post.title}><main id="main"><Hero content={blog.hero}/><div class="detail-container article-layout"><article><h2>{post.heading}</h2><RichText class="detail-body" content={post.body}/></article>{related.length>0&&<aside aria-label={blog.relatedHeading}><h2>{blog.relatedHeading}</h2><div class="related-grid">{related.map(item=><ListingCard item={item} href={`/blog/${item.slug}/`} label={blog.readMoreLabel} arrow={blog.arrow}/>)}</div></aside>}</div></main></BaseLayout>

@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import SplitSection from '../components/SplitSection.astro';
+import RichText from '../components/RichText.astro';
+import {home} from '../lib/content';
+---
+<BaseLayout title={home.meta.title} description={home.meta.description}><main id="main">
+<Hero content={home.hero} home/>
+<section class="stats-band"><div class="wide-container stats-grid">{home.stats.map(stat=><div><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div></section>
+<section class="section-padding home-services" id="services"><div class="wide-container"><SectionHeading {...home.services}/><div class="three-grid">{home.services.items.map((item,i)=><article class:list={['service-card',{'service-card-primary':i===0}]}><span class="service-icon"><img class="figma-icon" src={item.icon} alt=""/></span><h3><a href={item.button.href}>{item.heading}</a></h3><RichText content={item.body}/><a class="read-more" href={item.button.href}>{item.button.label}<img class="figma-icon" src={home.arrow} alt=""/></a></article>)}</div></div></section>
+<section class="section-padding soft-section"><div class="wide-container"><SectionHeading {...home.process}/><div class="four-grid process-grid">{home.process.items.map(item=><article><strong>{item.number}</strong><h3>{item.heading}</h3><RichText content={item.body}/></article>)}</div></div></section>
+<section class="section-padding home-feature"><SplitSection content={home.feature}/></section>
+<section class="partners soft-section"><div class="wide-container"><h2>{home.partners.heading}</h2><ul>{home.partners.names.map(name=><li>{name}</li>)}</ul></div></section>
+</main></BaseLayout>

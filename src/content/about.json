@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "About Us | Aerolex",
+    "description": "Two decades of experience helping aviation operators achieve excellence in safety, compliance, and operations."
+  },
+  "hero": {
+    "heading": "About Us",
+    "accent": "",
+    "description": "<p>Two decades of experience helping aviation operators achieve excellence in safety, compliance, and operations.</p>",
+    "image": {
+      "src": "/images/figma/about/imgImg6.png",
+      "alt": "Aviation professionals meeting in an airport conference room"
+    },
+    "button": {
+      "label": "",
+      "href": ""
+    }
+  },
+  "story": {
+    "eyebrow": "",
+    "heading": "Our Story",
+    "body": "<p>Founded by former airline executives and regulatory specialists, Aviation Partners has grown into a trusted advisor for operators across six continents. Our team combines deep regulatory expertise with hands-on operational experience.</p><p>We believe that every operator deserves access to world-class expertise. Whether you are a startup airline seeking your first AOC or an established carrier optimizing your safety management system, we provide the guidance you need.</p>",
+    "image": {
+      "src": "/images/figma/about/imgImg24.png",
+      "alt": "Modern office building beside an airport"
+    },
+    "button": {
+      "label": "",
+      "href": ""
+    },
+    "stats": []
+  },
+  "journey": {
+    "heading": "Our Journey",
+    "description": "Key milestones that have shaped our growth and success over the past two decades.",
+    "items": [
+      {
+        "year": "2001",
+        "heading": "Founded",
+        "body": "<p>Established by former airline executives and regulatory specialists to bridge the gap between operators and authorities.</p>"
+      },
+      {
+        "year": "2008",
+        "heading": "Global Expansion",
+        "body": "<p>Opened offices in London, Singapore, and Dubai to serve clients across Europe, Asia, and the Middle East.</p>"
+      },
+      {
+        "year": "2014",
+        "heading": "IOSA Partnership",
+        "body": "<p>Became an IATA-recognised training partner, delivering certified IOSA auditor training programmes worldwide.</p>"
+      },
+      {
+        "year": "2019",
+        "heading": "150th Operator",
+        "body": "<p>Surpassed 150 successfully supported operators across six continents, spanning commercial, cargo, and charter.</p>"
+      },
+      {
+        "year": "2024",
+        "heading": "Digital Innovation",
+        "body": "<p>Launched proprietary compliance monitoring software and online training platforms for remote auditing.</p>"
+      }
+    ]
+  },
+  "team": {
+    "heading": "Leadership Team",
+    "description": "Meet the experts who lead our consultancy, training, and safety programmes.",
+    "items": [
+      {
+        "initials": "RH",
+        "name": "Richard Holloway",
+        "role": "Managing Director",
+        "body": "<p>Former airline operations executive with 28 years of experience in regulatory compliance and AOC management.</p>"
+      },
+      {
+        "initials": "DEV",
+        "name": "Dr. Elena Vasquez",
+        "role": "Head of Safety",
+        "body": "<p>PhD in Aviation Safety with 20 years leading SMS programs for major carriers across Europe and Asia.</p>"
+      },
+      {
+        "initials": "MT",
+        "name": "Marcus Thompson",
+        "role": "Lead Training Consultant",
+        "body": "<p>Ex-CAA inspector and certified CRM trainer with 15 years of instructional design experience.</p>"
+      },
+      {
+        "initials": "PN",
+        "name": "Priya Nair",
+        "role": "Regulatory Affairs Director",
+        "body": "<p>Former ICAO advisor specialising in cross-border regulatory harmonisation and gap analysis.</p>"
+      }
+    ]
+  },
+  "values": {
+    "heading": "Our Values",
+    "items": [
+      {
+        "heading": "Integrity",
+        "body": "<p>We operate with complete transparency and honesty in every client engagement.</p>",
+        "icon": "/images/figma/about/imgGroup.svg"
+      },
+      {
+        "heading": "Excellence",
+        "body": "<p>We pursue the highest standards in every service we deliver.</p>",
+        "icon": "/images/figma/about/imgGroup1.svg"
+      },
+      {
+        "heading": "Innovation",
+        "body": "<p>We continuously evolve our approach to meet changing industry demands.</p>",
+        "icon": "/images/figma/about/imgGroup2.svg"
+      },
+      {
+        "heading": "Partnership",
+        "body": "<p>We work alongside our clients as true partners in their success.</p>",
+        "icon": "/images/figma/about/imgGroup3.svg"
+      }
+    ]
+  },
+  "reach": {
+    "eyebrow": "Global Reach",
+    "heading": "Wherever You Operate, We Are There",
+    "body": "<p>With offices in London, Singapore, and Dubai, and consultants deployed across six continents, we provide local expertise with global perspective. Our team understands the regulatory nuances of every major aviation jurisdiction.</p>",
+    "image": {
+      "src": "/images/figma/about/imgImg300.png",
+      "alt": "Illuminated world map showing international connections"
+    },
+    "button": {
+      "label": "",
+      "href": ""
+    },
+    "stats": [
+      {
+        "value": "London",
+        "label": "EMEA Hub"
+      },
+      {
+        "value": "Singapore",
+        "label": "APAC Hub"
+      },
+      {
+        "value": "Dubai",
+        "label": "MENA Hub"
+      }
+    ]
+  }
+}

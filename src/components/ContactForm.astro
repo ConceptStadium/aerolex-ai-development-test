@@ -1,0 +1,25 @@
+---
+import {contact} from '../lib/content';
+const form=contact.form;
+---
+<section class="contact-form-panel" aria-labelledby="form-heading"><h2 id="form-heading">{form.heading}</h2><p>{form.description}</p><p class="form-notice" id="form-notice">{form.previewNotice}</p>
+<form id="contact-form" aria-describedby="form-notice" data-valid-message={form.validatedMessage} data-invalid-message={form.validationMessage}>
+<fieldset disabled><div class="form-grid">{form.fields.map(field=><div class:list={['form-field',{'full-width':field.type==='textarea'}]}><label for={field.name}>{field.label}{field.required&&<span aria-hidden="true"> *</span>}</label>{field.type==='textarea'?<textarea id={field.name} name={field.name} placeholder={field.placeholder} required={field.required} minlength="10" maxlength="5000" rows="5"/>:field.type==='select'?<select id={field.name} name={field.name} required={field.required} style={`background-image:url('${form.selectIcon}')`}><option value="">{field.placeholder}</option>{form.services.map(service=><option value={service}>{service}</option>)}</select>:<input id={field.name} name={field.name} type={field.type==='email'?'email':'text'} placeholder={field.placeholder} required={field.required} minlength={field.type==='text'?2:undefined} maxlength={field.type==='email'?254:200} autocomplete={field.name==='fullName'?'name':field.name==='company'?'organization':'email'}/>}</div>)}</div><button class="button contact-submit" type="submit">{form.buttonLabel}</button></fieldset>
+<p id="form-result" class="form-result" role="status" aria-live="polite" tabindex="-1"></p>
+<noscript><p>{form.noScriptMessage}</p></noscript></form></section>
+<script>
+const form=document.querySelector<HTMLFormElement>('#contact-form');
+if(form){
+  form.querySelector('fieldset')!.disabled=false;
+  const service=form.querySelector<HTMLSelectElement>('select[name="service"]');
+  const requested=new URLSearchParams(location.search).get('service');
+  if(service&&requested&&[...service.options].some(option=>option.value===requested))service.value=requested;
+  const result=form.querySelector<HTMLElement>('#form-result')!;
+  form.addEventListener('input',()=>{result.textContent='';form.querySelectorAll<HTMLInputElement|HTMLTextAreaElement>('[required]').forEach(input=>input.setCustomValidity(input.value.trim()?'':form.dataset.invalidMessage||''))});
+  form.addEventListener('submit',event=>{
+    event.preventDefault();
+    if(!form.reportValidity()){result.textContent=form.dataset.invalidMessage||'';return;}
+    result.textContent=form.dataset.validMessage||'';result.focus();
+  });
+}
+</script>

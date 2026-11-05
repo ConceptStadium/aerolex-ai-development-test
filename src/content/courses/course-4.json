@@ -1,0 +1,52 @@
+{
+  "slug": "course-4",
+  "title": "Course Name",
+  "date": "2026-05-28",
+  "order": 4,
+  "draft": false,
+  "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+  "image": {
+    "src": "/images/training-workspace.png",
+    "alt": "Laptop displaying charts on a desk with books, glasses and a coffee cup"
+  },
+  "heroDescription": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+  "intro": "<p>Increase your knowledge - our AAT is an unique auditing course with aviation focus. You will gain relevant and concise quality management knowledge and simultaneously complete the basic training to be an aviation auditor. Video training, case studies and debriefings have the effect of greater learning success. This training course is suitable for all airline-related companies. Course content and regulations are updated continuously.</p>",
+  "syllabusHeading": "Syllabus",
+  "syllabus": [
+    "Quality Management Principles",
+    "Roles / Responsibilities in a QMS/CMS",
+    "Quality Norms",
+    "International Aviation Organizations",
+    "Introduction to EASA Air OPS",
+    "Introduction to IOSA/ISAGO/SARPcheck",
+    "Quality/Compliance System under EASA Air OPS & IOSA",
+    "Audit Program",
+    "Audit Process",
+    "Audit Preparation",
+    "Audit Conduct",
+    "Communication",
+    "Interpersonal Skills",
+    "Audit Findings & Reports",
+    "Auditor Characteristics"
+  ],
+  "sections": [
+    {
+      "heading": "Objectives",
+      "body": "<p>Our training imparts the latest knowledge about quality management and the conduct of audits. You will be enabled to work as an internal auditor and gain compact expertise concerning quality management systems in accordance with the relevant requirements. Benefit from our experience - our trainer team has already conducted over 150 Aviation Auditor Training (AAT) courses and because of this they are perfectly equipped with practical skills.</p>"
+    },
+    {
+      "heading": "Target Group",
+      "body": "<ul><li>Aviation personnel who are involved in the implementation of internal audits or in quality management procedures of an aviation company</li></ul>"
+    },
+    {
+      "heading": "Prerequisites",
+      "body": "<p>None</p>"
+    },
+    {
+      "heading": "Certification",
+      "body": "<p>After successfully passing a written exam the participants will be certified as an internal aviation auditor.</p>"
+    }
+  ],
+  "downloadLabel": "Download Syllabus",
+  "contactLabel": "Contact Us"
+}

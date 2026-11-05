@@ -1,0 +1,5 @@
+---
+interface Props { href: string; label?: string; class?: string; current?: boolean; }
+const { href, label, class: className, current } = Astro.props;
+---
+{href ? <a href={href} class={className} aria-label={label} aria-current={current ? 'page' : undefined}><slot /></a> : <span class={className} aria-label={label}><slot /></span>}

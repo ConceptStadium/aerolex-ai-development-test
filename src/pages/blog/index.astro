@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import {blog,posts} from '../../lib/content';
+---
+<BaseLayout title={blog.meta.title} description={blog.meta.description}><main id="main"><Hero content={blog.hero}/><section class="blog-listing"><div class="filter-bar" role="group" aria-label={blog.filterLabel}>{blog.categories.map((category,i)=><button type="button" data-filter={i===0?'*':category} aria-pressed={i===0} aria-controls="blog-grid">{category}</button>)}</div><div id="blog-grid" class="course-grid">{posts.map(post=><ListingCard item={post} href={`/blog/${post.slug}/`} label={blog.readMoreLabel} arrow={blog.arrow} category={post.category}/>)}</div><p class="empty-results" role="status" hidden>{blog.emptyMessage}</p></section></main></BaseLayout>
+<script>
+ const buttons=document.querySelectorAll<HTMLButtonElement>('[data-filter]');
+ buttons.forEach(button=>button.addEventListener('click',()=>{
+   buttons.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+   let visible=0;document.querySelectorAll<HTMLElement>('#blog-grid article').forEach(card=>{card.hidden=button.dataset.filter!=='*'&&card.dataset.category!==button.dataset.filter;if(!card.hidden)visible++});
+   const empty=document.querySelector<HTMLElement>('.empty-results');if(empty)empty.hidden=visible>0;
+ }));
+</script>

@@ -1,0 +1,6 @@
+---
+import sanitizeHtml from 'sanitize-html';
+interface Props { content: string; class?: string; }
+const html = sanitizeHtml(Astro.props.content, {allowedTags:['p','br','strong','em','ul','ol','li','a','h2','h3','blockquote'],allowedAttributes:{a:['href','title']},allowedSchemes:['https','mailto','tel'],allowProtocolRelative:false});
+---
+<div class:list={['rich-text', Astro.props.class]} set:html={html} />

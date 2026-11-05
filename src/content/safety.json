@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "Safety & Compliance | Aerolex",
+    "description": "Comprehensive safety management, risk assessment, and regulatory compliance solutions to protect your operations and passengers."
+  },
+  "hero": {
+    "heading": "Safety & Compliance",
+    "accent": "",
+    "description": "<p>Comprehensive safety management, risk assessment, and regulatory compliance solutions to protect your operations and passengers.</p>",
+    "image": {
+      "src": "/images/figma/safety/imgImg6.png",
+      "alt": "Aviation safety specialists in an operations control room"
+    },
+    "button": {
+      "label": "",
+      "href": ""
+    }
+  },
+  "services": [
+    {
+      "id": "sms-design",
+      "heading": "Safety Management System Design",
+      "body": "<p>We design and implement Safety Management Systems (SMS) aligned with ICAO Annex 19 and EASA requirements. Our approach ensures proactive hazard identification, risk mitigation, and continuous safety performance monitoring. Every SMS we build is tailored to your operational scale, fleet type, and regulatory environment — not a generic template.</p>",
+      "image": {
+        "src": "/images/figma/safety/imgImg36.png",
+        "alt": "Safety Management System Design — aviation operations"
+      },
+      "button": {
+        "label": "Design Your SMS",
+        "href": "/contact/?service=Safety%20%26%20Compliance"
+      },
+      "filled": true
+    },
+    {
+      "id": "investigation-support",
+      "heading": "Safety Investigation Support",
+      "body": "<p>Our expert investigators provide independent support for safety occurrence investigations, helping you determine root causes, meet reporting obligations, and implement effective corrective actions. We apply industry-standard methodologies including bow-tie analysis and HFACS to ensure every finding is actionable and every recommendation is practical.</p>",
+      "image": {
+        "src": "/images/figma/safety/imgImg73.png",
+        "alt": "Safety Investigation Support — aviation operations"
+      },
+      "button": {
+        "label": "Request Investigation Support",
+        "href": "/contact/?service=Safety%20%26%20Compliance"
+      },
+      "filled": false
+    },
+    {
+      "id": "risk-assessment",
+      "heading": "Risk Assessment and Hazard Identification",
+      "body": "<p>We conduct systematic risk assessments and hazard identification workshops using industry-leading methodologies. Our outputs include detailed risk registers, mitigation strategies, and monitoring frameworks that integrate directly with your existing safety processes, giving your team clear visibility into your operational risk profile.</p>",
+      "image": {
+        "src": "/images/figma/safety/imgImg76.png",
+        "alt": "Risk Assessment and Hazard Identification — aviation operations"
+      },
+      "button": {
+        "label": "Start Your Risk Assessment",
+        "href": "/contact/?service=Safety%20%26%20Compliance"
+      },
+      "filled": false
+    },
+    {
+      "id": "iosa-audits",
+      "heading": "IOSA Audits",
+      "body": "<p>Our IOSA-qualified auditors conduct comprehensive pre-audits and full audits to IATA standards. We help operators prepare for, undergo, and close out IOSA audits with confidence. From document review to on-site assessment, we ensure every ISM standard is addressed and every finding is resolved before the final report.</p>",
+      "image": {
+        "src": "/images/figma/safety/imgImg113.png",
+        "alt": "IOSA Audits — aviation operations"
+      },
+      "button": {
+        "label": "Book an IOSA Audit",
+        "href": "/contact/?service=Safety%20%26%20Compliance"
+      },
+      "filled": false
+    },
+    {
+      "id": "gap-analysis",
+      "heading": "Gap Analysis",
+      "body": "<p>Beyond compliance, our safety gap analysis evaluates your safety culture, procedures, and performance against industry best practices, delivering a roadmap for continuous improvement. We benchmark your operations against peers and global standards, showing you exactly where you stand and how to get where you need to be.</p>",
+      "image": {
+        "src": "/images/figma/safety/imgImg116.png",
+        "alt": "Gap Analysis — aviation operations"
+      },
+      "button": {
+        "label": "Request a Gap Analysis",
+        "href": "/contact/?service=Safety%20%26%20Compliance"
+      },
+      "filled": false
+    },
+    {
+      "id": "compliance-monitoring",
+      "heading": "Regulatory Compliance Monitoring",
+      "body": "<p>We establish ongoing compliance monitoring programs that track regulatory changes, assess impact, and ensure your operations remain current and compliant at all times. Our monitoring service includes regular bulletin updates, impact assessments for each regulatory change, and quarterly compliance status reports tailored to your operation.</p>",
+      "image": {
+        "src": "/images/figma/safety/imgImg153.png",
+        "alt": "Regulatory Compliance Monitoring — aviation operations"
+      },
+      "button": {
+        "label": "Set Up Compliance Monitoring",
+        "href": "/contact/?service=Safety%20%26%20Compliance"
+      },
+      "filled": false
+    },
+    {
+      "id": "flight-data-monitoring",
+      "heading": "Flight Data Monitoring",
+      "body": "<p>Our Flight Data Monitoring (FDM) / Flight Operations Quality Assurance (FOQA) programs provide data-driven insights into operational safety, enabling proactive risk management and trend analysis. We help you turn raw flight data into meaningful safety intelligence that your team can act on, without drowning in information.</p>",
+      "image": {
+        "src": "/images/figma/safety/imgImg156.png",
+        "alt": "Flight Data Monitoring — aviation operations"
+      },
+      "button": {
+        "label": "Launch Your FDM Programme",
+        "href": "/contact/?service=Safety%20%26%20Compliance"
+      },
+      "filled": false
+    }
+  ],
+  "feature": {
+    "eyebrow": "Our Framework",
+    "heading": "A Proactive Approach to Safety",
+    "body": "<p>We believe safety is not just about reacting to incidents. It is about building a culture where hazards are identified and mitigated before they become problems. Our framework integrates ICAO Annex 19 principles with practical operational tools.</p><p>From SMS design and risk assessment to flight data monitoring and safety investigation, we provide the full spectrum of safety services that modern aviation demands.</p>",
+    "image": {
+      "src": "/images/figma/safety/imgImg179.png",
+      "alt": "Aviation safety framework on a control-room screen"
+    },
+    "button": {
+      "label": "",
+      "href": ""
+    },
+    "stats": [
+      {
+        "value": "40%",
+        "label": "Average Incident Reduction"
+      },
+      {
+        "value": "200+",
+        "label": "SMS Implementations"
+      }
+    ]
+  }
+}

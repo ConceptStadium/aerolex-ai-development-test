@@ -1,0 +1,48 @@
+{
+  "fileKey": "YWSo7zk37zCZjqXJZFcYLT",
+  "frames": [
+    {
+      "name": "Home",
+      "nodeId": "16:1561"
+    },
+    {
+      "name": "About",
+      "nodeId": "3:2"
+    },
+    {
+      "name": "Consultancy",
+      "nodeId": "22:2675"
+    },
+    {
+      "name": "Safety and Compliance",
+      "nodeId": "22:2116"
+    },
+    {
+      "name": "Training",
+      "nodeId": "26:2"
+    },
+    {
+      "name": "Training Detail",
+      "nodeId": "26:321"
+    },
+    {
+      "name": "Blog",
+      "nodeId": "11:479"
+    },
+    {
+      "name": "Blog Detail",
+      "nodeId": "13:1481"
+    },
+    {
+      "name": "Contact",
+      "nodeId": "10:2"
+    }
+  ],
+  "responsiveFrames": [],
+  "notes": [
+    "All nine frames accessible.",
+    "Figma repeats six course cards and six blog cards; their sample copy is preserved.",
+    "Blog Detail heading and body are lorem ipsum despite descriptive listing titles.",
+    "No approved legal copy, social profile URLs, or original syllabus download supplied."
+  ]
+}

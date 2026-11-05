@@ -1,0 +1,6 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+import {ui} from '../lib/content';
+---
+<BaseLayout title={ui.notFoundTitle} description={ui.notFoundDescription} solidHeader><main id="main" class="notice-page"><h1>{ui.notFoundTitle}</h1><p>{ui.notFoundDescription}</p><Button href="/" label={ui.homeLabel}/></main></BaseLayout>

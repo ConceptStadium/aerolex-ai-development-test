@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TrainingHero from './TrainingHero.astro';
+import CourseCard from './CourseCard.astro';
+import { training, courses } from '../lib/content';
+---
+<BaseLayout title={training.pageTitle} description={training.metaDescription}>
+  <main id="main"><TrainingHero /><section class="courses" aria-label={training.coursesLabel}><div class="course-grid">{courses.map(course => <CourseCard course={course} />)}</div></section></main>
+</BaseLayout>

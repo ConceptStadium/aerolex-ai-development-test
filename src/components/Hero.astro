@@ -1,0 +1,12 @@
+---
+import RichText from './RichText.astro';
+import Button from './Button.astro';
+import type {HeroContent} from '../lib/content';
+interface Props {content:HeroContent; home?:boolean}
+const {content,home=false}=Astro.props;
+---
+<section class:list={['page-hero',{'home-hero':home}]} aria-labelledby="hero-title">
+  <img class="hero-image" src={content.image.src} alt={content.image.alt} fetchpriority="high" />
+  <div class="hero-shade"></div>
+  <div class="hero-content"><h1 id="hero-title">{content.heading}{content.accent&&<span>{content.accent}</span>}</h1><RichText content={content.description}/>{content.button.href&&<Button {...content.button} variant="light"/>}</div>
+</section>

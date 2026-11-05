@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import SplitSection from '../components/SplitSection.astro';
+import RichText from '../components/RichText.astro';
+import {about} from '../lib/content';
+---
+<BaseLayout title={about.meta.title} description={about.meta.description}><main id="main">
+<Hero content={about.hero}/>
+<section class="section-padding teal-heading"><SplitSection content={about.story}/></section>
+<section class="section-padding journey"><div class="wide-container"><SectionHeading {...about.journey}/><ol class="timeline">{about.journey.items.map(item=><li><time>{item.year}</time><div><h3>{item.heading}</h3><RichText content={item.body}/></div></li>)}</ol></div></section>
+<section class="section-padding team-section"><div class="wide-container"><SectionHeading {...about.team}/><div class="four-grid team-grid">{about.team.items.map(member=><article><div class="initials">{member.initials}</div><h3>{member.name}</h3><p class="team-role">{member.role}</p><RichText content={member.body}/></article>)}</div></div></section>
+<section class="section-padding soft-section values-section"><div class="content-container"><SectionHeading heading={about.values.heading}/><div class="four-grid values-grid">{about.values.items.map(value=><article><span class="round-icon"><img class="figma-icon" src={value.icon} alt=""/></span><h3>{value.heading}</h3><RichText content={value.body}/></article>)}</div></div></section>
+<section class="section-padding teal-heading reach-section"><SplitSection content={about.reach} reverse/></section>
+</main></BaseLayout>

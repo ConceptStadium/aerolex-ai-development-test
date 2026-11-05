@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from './Hero.astro';
+import SplitSection from './SplitSection.astro';
+import type {HeroContent,FeatureContent} from '../lib/content';
+interface Props {page:{meta:{title:string;description:string};hero:HeroContent;services:(FeatureContent&{id:string;filled:boolean})[];feature:FeatureContent}}
+const {page}=Astro.props;
+---
+<BaseLayout title={page.meta.title} description={page.meta.description}><main id="main"><Hero content={page.hero}/><section class="service-sections">{page.services.map((service,i)=><SplitSection content={service} id={service.id} reverse={i%2===1} service filled={service.filled}/>)}</section><section class="section-padding soft-section"><SplitSection content={page.feature}/></section></main></BaseLayout>

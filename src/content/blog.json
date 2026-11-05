@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "Blog | Aerolex",
+    "description": "Latest insights, regulatory updates, and industry news from our team of aviation experts."
+  },
+  "hero": {
+    "heading": "Blog",
+    "accent": "",
+    "description": "<p>Latest insights, regulatory updates, and industry news from our team of aviation experts.</p>",
+    "image": {
+      "src": "/images/figma/blog/imgImg6.png",
+      "alt": "Laptop and learning materials on a desk"
+    },
+    "button": {
+      "label": "",
+      "href": ""
+    }
+  },
+  "categories": [
+    "All",
+    "Regulatory",
+    "Safety",
+    "Compliance",
+    "Training",
+    "Consultancy"
+  ],
+  "readMoreLabel": "Read more",
+  "arrow": "/images/figma/blog/imgGroup.svg",
+  "relatedHeading": "Related News",
+  "emptyMessage": "No articles in this category yet.",
+  "filterLabel": "Filter articles by category"
+}

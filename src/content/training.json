@@ -1,0 +1,13 @@
+{
+  "pageTitle": "Training | Aerolex",
+  "heading": "Training",
+  "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+  "metaDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "heroImage": {
+    "src": "/images/training-workspace.png",
+    "alt": "Laptop displaying charts on a desk with books, glasses and a coffee cup"
+  },
+  "coursesLabel": "Training courses",
+  "readMoreLabel": "Read more",
+  "arrow": "/images/arrow.svg"
+}

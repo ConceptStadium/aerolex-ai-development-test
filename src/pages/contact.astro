@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import ContentLink from '../components/ContentLink.astro';
+import ContactForm from '../components/ContactForm.astro';
+import {contact} from '../lib/content';
+---
+<BaseLayout title={contact.meta.title} description={contact.meta.description}><main id="main"><Hero content={contact.hero}/><div class="contact-container"><section class="three-grid contact-details" id="contact-details">{contact.details.map(detail=><article><span class="round-icon"><img class="figma-icon" src={detail.icon} alt=""/></span><h2>{detail.heading}</h2>{detail.lines.map(line=><p><ContentLink href={line.href}>{line.label}</ContentLink></p>)}</article>)}</section><ContactForm/></div></main></BaseLayout>

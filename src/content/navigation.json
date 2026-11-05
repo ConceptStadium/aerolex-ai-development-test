@@ -1,0 +1,96 @@
+{
+  "logo": {
+    "src": "/images/aerolex-logo.svg",
+    "alt": "Aerolex"
+  },
+  "homeHref": "/",
+  "menuLabel": "Menu",
+  "skipLabel": "Skip to content",
+  "label": "Main navigation",
+  "chevron": "/images/chevron.svg",
+  "items": [
+    {
+      "label": "About",
+      "href": "/about/",
+      "showChevron": false,
+      "children": []
+    },
+    {
+      "label": "Consultancy",
+      "href": "/consultancy/",
+      "showChevron": true,
+      "children": [
+        {
+          "label": "Flight Operations (AOC Setup & Compliance)",
+          "href": "/consultancy/#aoc-setup"
+        },
+        {
+          "label": "Regulatory Gap Analysis",
+          "href": "/consultancy/#regulatory-gap-analysis"
+        },
+        {
+          "label": "Civil Aviation Authority (CAA/NAA) Advisory Support",
+          "href": "/consultancy/#authority-advisory"
+        }
+      ]
+    },
+    {
+      "label": "Training",
+      "href": "/training/",
+      "showChevron": true,
+      "children": [
+        {
+          "label": "All training courses",
+          "href": "/training/"
+        }
+      ]
+    },
+    {
+      "label": "Safety & Compliance",
+      "href": "/safety-and-compliance/",
+      "showChevron": true,
+      "children": [
+        {
+          "label": "Safety Management System Design",
+          "href": "/safety-and-compliance/#sms-design"
+        },
+        {
+          "label": "Safety Investigation Support",
+          "href": "/safety-and-compliance/#investigation-support"
+        },
+        {
+          "label": "Risk Assessment and Hazard Identification",
+          "href": "/safety-and-compliance/#risk-assessment"
+        },
+        {
+          "label": "IOSA Audits",
+          "href": "/safety-and-compliance/#iosa-audits"
+        },
+        {
+          "label": "Gap Analysis",
+          "href": "/safety-and-compliance/#gap-analysis"
+        },
+        {
+          "label": "Regulatory Compliance Monitoring",
+          "href": "/safety-and-compliance/#compliance-monitoring"
+        },
+        {
+          "label": "Flight Data Monitoring",
+          "href": "/safety-and-compliance/#flight-data-monitoring"
+        }
+      ]
+    },
+    {
+      "label": "Blog",
+      "href": "/blog/",
+      "showChevron": false,
+      "children": []
+    },
+    {
+      "label": "Contact",
+      "href": "/contact/",
+      "showChevron": false,
+      "children": []
+    }
+  ]
+}

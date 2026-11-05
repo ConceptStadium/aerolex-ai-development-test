@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import RichText from '../../components/RichText.astro';
+import Button from '../../components/Button.astro';
+import {courses,type Course} from '../../lib/content';
+export function getStaticPaths(){return courses.map(course=>({params:{slug:course.slug},props:{course}}))}
+interface Props {course:Course}
+const {course}=Astro.props;
+---
+<BaseLayout title={`${course.title} | Aerolex`} description={course.title}><main id="main"><Hero content={{heading:course.title,accent:'',description:course.heroDescription,image:course.image,button:{label:'',href:''}}}/><div class="detail-container training-detail"><article><h2>{course.title}</h2><div class="detail-body"><RichText content={course.intro}/><h3>{course.syllabusHeading}</h3><ul class="syllabus-list">{course.syllabus.map(topic=><li>{topic}</li>)}</ul>{course.sections.map(section=><section><h3>{section.heading}</h3><RichText content={section.body}/></section>)}</div><div class="button-row"><Button href={`/training/${course.slug}/syllabus.txt`} label={course.downloadLabel} download/><Button href="/contact/?service=Training" label={course.contactLabel} variant="outline"/></div></article></div></main></BaseLayout>

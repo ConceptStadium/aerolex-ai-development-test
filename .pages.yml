@@ -1,0 +1,1469 @@
+media:
+  input: public/images
+  output: /images
+  categories:
+    - image
+  rename: safe
+content:
+  - name: home
+    label: Home
+    type: file
+    path: src/content/home.json
+    format: json
+    fields:
+      - name: meta
+        label: Search and browser metadata
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+      - name: hero
+        label: Hero section
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: accent
+            label: Highlighted heading line
+            type: string
+          - name: description
+            label: Description
+            type: rich-text
+            options:
+              format: html
+              media: false
+          - name: image
+            label: Image and alternative text
+            type: object
+            fields:
+              - name: src
+                label: Image
+                type: image
+                required: true
+              - name: alt
+                label: Alternative text
+                type: string
+                description: Describe meaningful images. Leave blank only for decorative images.
+          - name: button
+            label: Button
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+      - name: stats
+        label: Stats
+        list: true
+        type: object
+        fields:
+          - name: value
+            label: Value
+            type: string
+          - name: label
+            label: Label
+            type: string
+      - name: services
+        label: Services
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+          - name: items
+            label: Items
+            list: true
+            type: object
+            fields:
+              - name: heading
+                label: Heading
+                type: string
+                required: true
+              - name: body
+                label: Formatted content
+                type: rich-text
+                options:
+                  format: html
+                  media: false
+              - name: icon
+                label: Icon
+                type: image
+                required: true
+              - name: button
+                label: Button
+                type: object
+                fields:
+                  - name: label
+                    label: Label
+                    type: string
+                  - name: href
+                    label: Destination URL
+                    type: string
+                    description: "Use a local path such as /contact/, or an https://, mailto: or
+                      tel: URL."
+      - name: process
+        label: Process
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+          - name: items
+            label: Items
+            list: true
+            type: object
+            fields:
+              - name: number
+                label: Number
+                type: string
+              - name: heading
+                label: Heading
+                type: string
+                required: true
+              - name: body
+                label: Formatted content
+                type: rich-text
+                options:
+                  format: html
+                  media: false
+      - name: feature
+        label: Feature
+        type: object
+        fields:
+          - name: eyebrow
+            label: Eyebrow
+            type: string
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: body
+            label: Formatted content
+            type: rich-text
+            options:
+              format: html
+              media: false
+          - name: image
+            label: Image and alternative text
+            type: object
+            fields:
+              - name: src
+                label: Image
+                type: image
+                required: true
+              - name: alt
+                label: Alternative text
+                type: string
+                description: Describe meaningful images. Leave blank only for decorative images.
+          - name: button
+            label: Button
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+          - name: stats
+            label: Stats
+            list: true
+            type: object
+            fields:
+              - name: value
+                label: Value
+                type: string
+              - name: label
+                label: Label
+                type: string
+      - name: partners
+        label: Partners
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: names
+            label: Names
+            list: true
+            type: string
+      - name: arrow
+        label: Arrow
+        type: image
+        required: true
+    operations:
+      create: false
+      rename: false
+      delete: false
+  - name: about
+    label: About
+    type: file
+    path: src/content/about.json
+    format: json
+    fields:
+      - name: meta
+        label: Search and browser metadata
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+      - name: hero
+        label: Hero section
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: accent
+            label: Highlighted heading line
+            type: string
+          - name: description
+            label: Description
+            type: rich-text
+            options:
+              format: html
+              media: false
+          - name: image
+            label: Image and alternative text
+            type: object
+            fields:
+              - name: src
+                label: Image
+                type: image
+                required: true
+              - name: alt
+                label: Alternative text
+                type: string
+                description: Describe meaningful images. Leave blank only for decorative images.
+          - name: button
+            label: Button
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+      - name: story
+        label: Story
+        type: object
+        fields:
+          - name: eyebrow
+            label: Eyebrow
+            type: string
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: body
+            label: Formatted content
+            type: rich-text
+            options:
+              format: html
+              media: false
+          - name: image
+            label: Image and alternative text
+            type: object
+            fields:
+              - name: src
+                label: Image
+                type: image
+                required: true
+              - name: alt
+                label: Alternative text
+                type: string
+                description: Describe meaningful images. Leave blank only for decorative images.
+          - name: button
+            label: Button
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+          - name: stats
+            label: Stats
+            list: true
+            type: object
+            fields:
+              - name: value
+                label: Value
+                type: string
+              - name: label
+                label: Label
+                type: string
+      - name: journey
+        label: Journey
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+          - name: items
+            label: Items
+            list: true
+            type: object
+            fields:
+              - name: year
+                label: Year
+                type: string
+              - name: heading
+                label: Heading
+                type: string
+                required: true
+              - name: body
+                label: Formatted content
+                type: rich-text
+                options:
+                  format: html
+                  media: false
+      - name: team
+        label: Team
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+          - name: items
+            label: Items
+            list: true
+            type: object
+            fields:
+              - name: initials
+                label: Initials
+                type: string
+              - name: name
+                label: Name
+                type: string
+                required: true
+              - name: role
+                label: Role
+                type: string
+              - name: body
+                label: Formatted content
+                type: rich-text
+                options:
+                  format: html
+                  media: false
+      - name: values
+        label: Values
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: items
+            label: Items
+            list: true
+            type: object
+            fields:
+              - name: heading
+                label: Heading
+                type: string
+                required: true
+              - name: body
+                label: Formatted content
+                type: rich-text
+                options:
+                  format: html
+                  media: false
+              - name: icon
+                label: Icon
+                type: image
+                required: true
+      - name: reach
+        label: Reach
+        type: object
+        fields:
+          - name: eyebrow
+            label: Eyebrow
+            type: string
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: body
+            label: Formatted content
+            type: rich-text
+            options:
+              format: html
+              media: false
+          - name: image
+            label: Image and alternative text
+            type: object
+            fields:
+              - name: src
+                label: Image
+                type: image
+                required: true
+              - name: alt
+                label: Alternative text
+                type: string
+                description: Describe meaningful images. Leave blank only for decorative images.
+          - name: button
+            label: Button
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+          - name: stats
+            label: Stats
+            list: true
+            type: object
+            fields:
+              - name: value
+                label: Value
+                type: string
+              - name: label
+                label: Label
+                type: string
+    operations:
+      create: false
+      rename: false
+      delete: false
+  - name: consultancy
+    label: Consultancy
+    type: file
+    path: src/content/consultancy.json
+    format: json
+    fields:
+      - name: meta
+        label: Search and browser metadata
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+      - name: hero
+        label: Hero section
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: accent
+            label: Highlighted heading line
+            type: string
+          - name: description
+            label: Description
+            type: rich-text
+            options:
+              format: html
+              media: false
+          - name: image
+            label: Image and alternative text
+            type: object
+            fields:
+              - name: src
+                label: Image
+                type: image
+                required: true
+              - name: alt
+                label: Alternative text
+                type: string
+                description: Describe meaningful images. Leave blank only for decorative images.
+          - name: button
+            label: Button
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+      - name: services
+        label: Services
+        list: true
+        type: object
+        fields:
+          - name: id
+            label: Section anchor ID
+            type: string
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: body
+            label: Formatted content
+            type: rich-text
+            options:
+              format: html
+              media: false
+          - name: image
+            label: Image and alternative text
+            type: object
+            fields:
+              - name: src
+                label: Image
+                type: image
+                required: true
+              - name: alt
+                label: Alternative text
+                type: string
+                description: Describe meaningful images. Leave blank only for decorative images.
+          - name: button
+            label: Button
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+          - name: filled
+            label: Filled
+            type: boolean
+      - name: feature
+        label: Feature
+        type: object
+        fields:
+          - name: eyebrow
+            label: Eyebrow
+            type: string
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: body
+            label: Formatted content
+            type: rich-text
+            options:
+              format: html
+              media: false
+          - name: image
+            label: Image and alternative text
+            type: object
+            fields:
+              - name: src
+                label: Image
+                type: image
+                required: true
+              - name: alt
+                label: Alternative text
+                type: string
+                description: Describe meaningful images. Leave blank only for decorative images.
+          - name: button
+            label: Button
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+          - name: stats
+            label: Stats
+            list: true
+            type: object
+            fields:
+              - name: value
+                label: Value
+                type: string
+              - name: label
+                label: Label
+                type: string
+    operations:
+      create: false
+      rename: false
+      delete: false
+  - name: safety
+    label: Safety and compliance
+    type: file
+    path: src/content/safety.json
+    format: json
+    fields:
+      - name: meta
+        label: Search and browser metadata
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+      - name: hero
+        label: Hero section
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: accent
+            label: Highlighted heading line
+            type: string
+          - name: description
+            label: Description
+            type: rich-text
+            options:
+              format: html
+              media: false
+          - name: image
+            label: Image and alternative text
+            type: object
+            fields:
+              - name: src
+                label: Image
+                type: image
+                required: true
+              - name: alt
+                label: Alternative text
+                type: string
+                description: Describe meaningful images. Leave blank only for decorative images.
+          - name: button
+            label: Button
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+      - name: services
+        label: Services
+        list: true
+        type: object
+        fields:
+          - name: id
+            label: Section anchor ID
+            type: string
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: body
+            label: Formatted content
+            type: rich-text
+            options:
+              format: html
+              media: false
+          - name: image
+            label: Image and alternative text
+            type: object
+            fields:
+              - name: src
+                label: Image
+                type: image
+                required: true
+              - name: alt
+                label: Alternative text
+                type: string
+                description: Describe meaningful images. Leave blank only for decorative images.
+          - name: button
+            label: Button
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+          - name: filled
+            label: Filled
+            type: boolean
+      - name: feature
+        label: Feature
+        type: object
+        fields:
+          - name: eyebrow
+            label: Eyebrow
+            type: string
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: body
+            label: Formatted content
+            type: rich-text
+            options:
+              format: html
+              media: false
+          - name: image
+            label: Image and alternative text
+            type: object
+            fields:
+              - name: src
+                label: Image
+                type: image
+                required: true
+              - name: alt
+                label: Alternative text
+                type: string
+                description: Describe meaningful images. Leave blank only for decorative images.
+          - name: button
+            label: Button
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+          - name: stats
+            label: Stats
+            list: true
+            type: object
+            fields:
+              - name: value
+                label: Value
+                type: string
+              - name: label
+                label: Label
+                type: string
+    operations:
+      create: false
+      rename: false
+      delete: false
+  - name: training
+    label: Training listing
+    type: file
+    path: src/content/training.json
+    format: json
+    fields:
+      - name: pageTitle
+        label: Page title
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: rich-text
+        options:
+          format: html
+          media: false
+      - name: metaDescription
+        label: Meta description
+        type: text
+      - name: heroImage
+        label: Hero image
+        type: object
+        fields:
+          - name: src
+            label: Image
+            type: image
+            required: true
+          - name: alt
+            label: Alternative text
+            type: string
+            description: Describe meaningful images. Leave blank only for decorative images.
+      - name: coursesLabel
+        label: Courses label
+        type: string
+      - name: readMoreLabel
+        label: Read more label
+        type: string
+      - name: arrow
+        label: Arrow
+        type: image
+        required: true
+    operations:
+      create: false
+      rename: false
+      delete: false
+  - name: blog
+    label: Blog listing
+    type: file
+    path: src/content/blog.json
+    format: json
+    fields:
+      - name: meta
+        label: Search and browser metadata
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+      - name: hero
+        label: Hero section
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: accent
+            label: Highlighted heading line
+            type: string
+          - name: description
+            label: Description
+            type: rich-text
+            options:
+              format: html
+              media: false
+          - name: image
+            label: Image and alternative text
+            type: object
+            fields:
+              - name: src
+                label: Image
+                type: image
+                required: true
+              - name: alt
+                label: Alternative text
+                type: string
+                description: Describe meaningful images. Leave blank only for decorative images.
+          - name: button
+            label: Button
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+      - name: categories
+        label: Categories
+        list: true
+        type: string
+      - name: readMoreLabel
+        label: Read more label
+        type: string
+      - name: arrow
+        label: Arrow
+        type: image
+        required: true
+      - name: relatedHeading
+        label: Related heading
+        type: string
+      - name: emptyMessage
+        label: Empty message
+        type: string
+      - name: filterLabel
+        label: Filter label
+        type: string
+    operations:
+      create: false
+      rename: false
+      delete: false
+  - name: contact
+    label: Contact
+    type: file
+    path: src/content/contact.json
+    format: json
+    fields:
+      - name: meta
+        label: Search and browser metadata
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+      - name: hero
+        label: Hero section
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: accent
+            label: Highlighted heading line
+            type: string
+          - name: description
+            label: Description
+            type: rich-text
+            options:
+              format: html
+              media: false
+          - name: image
+            label: Image and alternative text
+            type: object
+            fields:
+              - name: src
+                label: Image
+                type: image
+                required: true
+              - name: alt
+                label: Alternative text
+                type: string
+                description: Describe meaningful images. Leave blank only for decorative images.
+          - name: button
+            label: Button
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+      - name: details
+        label: Details
+        list: true
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: icon
+            label: Icon
+            type: image
+            required: true
+          - name: lines
+            label: Lines
+            list: true
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+      - name: form
+        label: Form
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+          - name: fields
+            label: Fields
+            list: true
+            type: object
+            fields:
+              - name: name
+                label: Name
+                type: string
+                required: true
+              - name: label
+                label: Label
+                type: string
+              - name: placeholder
+                label: Placeholder
+                type: string
+              - name: type
+                label: Type
+                type: select
+                options:
+                  values:
+                    - text
+                    - email
+                    - select
+                    - textarea
+              - name: required
+                label: Required
+                type: boolean
+          - name: services
+            label: Services
+            list: true
+            type: string
+          - name: selectIcon
+            label: Select icon
+            type: image
+            required: true
+          - name: buttonLabel
+            label: Button label
+            type: string
+          - name: previewNotice
+            label: Local form notice
+            type: text
+          - name: validatedMessage
+            label: Validation result (message is not sent)
+            type: text
+          - name: validationMessage
+            label: Invalid form message
+            type: text
+          - name: noScriptMessage
+            label: JavaScript-disabled notice
+            type: text
+    operations:
+      create: false
+      rename: false
+      delete: false
+  - name: navigation
+    label: Header and navigation
+    type: file
+    path: src/content/navigation.json
+    format: json
+    fields:
+      - name: logo
+        label: Logo
+        type: object
+        fields:
+          - name: src
+            label: Image
+            type: image
+            required: true
+          - name: alt
+            label: Alternative text
+            type: string
+            description: Describe meaningful images. Leave blank only for decorative images.
+      - name: homeHref
+        label: Home href
+        type: string
+      - name: menuLabel
+        label: Menu label
+        type: string
+      - name: skipLabel
+        label: Skip label
+        type: string
+      - name: label
+        label: Label
+        type: string
+      - name: chevron
+        label: Chevron
+        type: image
+        required: true
+      - name: items
+        label: Items
+        list: true
+        type: object
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: href
+            label: Destination URL
+            type: string
+            description: "Use a local path such as /contact/, or an https://, mailto: or
+              tel: URL."
+          - name: showChevron
+            label: Show dropdown indicator
+            type: boolean
+          - name: children
+            label: Dropdown links
+            list: true
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+    operations:
+      create: false
+      rename: false
+      delete: false
+  - name: footer
+    label: Footer
+    type: file
+    path: src/content/footer.json
+    format: json
+    fields:
+      - name: logo
+        label: Logo
+        type: object
+        fields:
+          - name: src
+            label: Image
+            type: image
+            required: true
+          - name: alt
+            label: Alternative text
+            type: string
+            description: Describe meaningful images. Leave blank only for decorative images.
+      - name: description
+        label: Description
+        type: text
+      - name: groups
+        label: Groups
+        list: true
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: links
+            label: Links
+            list: true
+            type: object
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Destination URL
+                type: string
+                description: "Use a local path such as /contact/, or an https://, mailto: or
+                  tel: URL."
+      - name: contactHeading
+        label: Contact heading
+        type: string
+      - name: contacts
+        label: Contacts
+        list: true
+        type: object
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: href
+            label: Destination URL
+            type: string
+            description: "Use a local path such as /contact/, or an https://, mailto: or
+              tel: URL."
+          - name: icon
+            label: Icon
+            type: image
+            required: true
+      - name: socials
+        label: Socials
+        list: true
+        type: object
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: href
+            label: Destination URL
+            type: string
+            description: "Use a local path such as /contact/, or an https://, mailto: or
+              tel: URL."
+          - name: icon
+            label: Icon
+            type: image
+            required: true
+      - name: copyright
+        label: Copyright
+        type: string
+      - name: credit
+        label: Credit
+        type: string
+    operations:
+      create: false
+      rename: false
+      delete: false
+  - name: ui
+    label: Interface labels
+    type: file
+    path: src/content/ui.json
+    format: json
+    fields:
+      - name: notFoundTitle
+        label: Not found title
+        type: string
+      - name: notFoundDescription
+        label: Not found description
+        type: string
+      - name: homeLabel
+        label: Home label
+        type: string
+      - name: closeMenuLabel
+        label: Close menu label
+        type: string
+    operations:
+      create: false
+      rename: false
+      delete: false
+  - name: courses
+    label: Training courses
+    type: collection
+    path: src/content/courses
+    format: json
+    filename: "{fields.slug}.json"
+    view:
+      primary: title
+    fields:
+      - name: slug
+        label: URL slug (lowercase, words separated by hyphens)
+        type: string
+        required: true
+        pattern: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+        description: Unique URL ending. Changing this changes the page address; update
+          any links to it.
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Publication date (YYYY-MM-DD)
+        type: string
+        required: true
+        pattern: ^\d{4}-\d{2}-\d{2}$
+      - name: order
+        label: Display order
+        type: number
+        required: true
+        description: Lower numbers appear first. Use 10, 20, 30 to leave room for new
+          entries.
+      - name: draft
+        label: Draft (hide from the website)
+        type: boolean
+        description: Enable to hide this entry from listings and page URLs. Disable to
+          publish on the next build.
+      - name: description
+        label: Description
+        type: rich-text
+        options:
+          format: html
+          media: false
+        required: true
+      - name: image
+        label: Image and alternative text
+        type: object
+        fields:
+          - name: src
+            label: Image
+            type: image
+            required: true
+          - name: alt
+            label: Alternative text
+            type: string
+            description: Describe meaningful images. Leave blank only for decorative images.
+      - name: heroDescription
+        label: Hero description
+        type: rich-text
+        options:
+          format: html
+          media: false
+        required: true
+      - name: intro
+        label: Intro
+        type: rich-text
+        options:
+          format: html
+          media: false
+        required: true
+      - name: syllabusHeading
+        label: Syllabus heading
+        type: string
+        required: true
+      - name: syllabus
+        label: Syllabus topics
+        list: true
+        type: string
+        required: true
+      - name: sections
+        label: Sections
+        list: true
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            required: true
+          - name: body
+            label: Formatted content
+            type: rich-text
+            options:
+              format: html
+              media: false
+        required: true
+      - name: downloadLabel
+        label: Download label
+        type: string
+        required: true
+      - name: contactLabel
+        label: Contact label
+        type: string
+        required: true
+    subfolders: false
+    operations:
+      create: true
+      rename: true
+      delete: true
+  - name: posts
+    label: Blog articles
+    type: collection
+    path: src/content/posts
+    format: json
+    filename: "{fields.slug}.json"
+    view:
+      primary: title
+    fields:
+      - name: slug
+        label: URL slug (lowercase, words separated by hyphens)
+        type: string
+        required: true
+        pattern: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+        description: Unique URL ending. Changing this changes the page address; update
+          any links to it.
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: heading
+        label: Heading
+        type: string
+        required: true
+      - name: date
+        label: Publication date (YYYY-MM-DD)
+        type: string
+        required: true
+        pattern: ^\d{4}-\d{2}-\d{2}$
+      - name: order
+        label: Display order
+        type: number
+        required: true
+        description: Lower numbers appear first. Use 10, 20, 30 to leave room for new
+          entries.
+      - name: draft
+        label: Draft (hide from the website)
+        type: boolean
+        description: Enable to hide this entry from listings and page URLs. Disable to
+          publish on the next build.
+      - name: category
+        label: Category
+        type: string
+        required: true
+        description: "Use one of: Regulatory, Safety, Compliance, Training, Consultancy.
+          These must match the Blog page filters."
+      - name: description
+        label: Description
+        type: rich-text
+        options:
+          format: html
+          media: false
+        required: true
+      - name: image
+        label: Image and alternative text
+        type: object
+        fields:
+          - name: src
+            label: Image
+            type: image
+            required: true
+          - name: alt
+            label: Alternative text
+            type: string
+            description: Describe meaningful images. Leave blank only for decorative images.
+      - name: body
+        label: Formatted content
+        type: rich-text
+        options:
+          format: html
+          media: false
+        required: true
+    subfolders: false
+    operations:
+      create: true
+      rename: true
+      delete: true
+  - name: legal
+    label: Legal pages
+    type: collection
+    path: src/content/legal
+    format: json
+    filename: "{fields.slug}.json"
+    view:
+      primary: title
+    fields:
+      - name: slug
+        label: URL slug (lowercase, words separated by hyphens)
+        type: string
+        required: true
+        pattern: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+        description: Unique URL ending. Changing this changes the page address; update
+          any links to it.
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: body
+        label: Formatted content
+        type: rich-text
+        options:
+          format: html
+          media: false
+        required: true
+      - name: contactLabel
+        label: Contact label
+        type: string
+        required: true
+    subfolders: false
+    operations:
+      create: false
+      rename: false
+      delete: false

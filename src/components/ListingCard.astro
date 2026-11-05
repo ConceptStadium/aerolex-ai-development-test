@@ -1,0 +1,11 @@
+---
+import RichText from './RichText.astro';
+import type {ImageContent} from '../lib/content';
+interface Props {item:{title:string;date:string;description:string;image:ImageContent};href:string;label:string;arrow:string;compact?:boolean;category?:string}
+const {item,href,label,arrow,compact=false,category}=Astro.props;
+const date=new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'}).format(new Date(item.date));
+---
+<article class:list={['course-card',{'compact-card':compact}]} data-category={category}>
+  <a href={href} tabindex="-1" aria-hidden="true"><img class="course-image" src={item.image.src} alt={item.image.alt} width="1600" height="896" loading="lazy" /></a>
+  <div class="course-body"><time datetime={item.date}>{date}</time><h2><a href={href}>{item.title}</a></h2><RichText content={item.description}/><a href={href} class="read-more" aria-label={`${label}: ${item.title}`}>{label}<img class="figma-icon" src={arrow} alt="" /></a></div>
+</article>

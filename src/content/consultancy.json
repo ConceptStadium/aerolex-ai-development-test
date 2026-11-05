@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "Consultancy | Aerolex",
+    "description": "Expert guidance through regulatory complexities, AOC certification, and ongoing compliance to keep your operations running smoothly."
+  },
+  "hero": {
+    "heading": "Consultancy",
+    "accent": "",
+    "description": "<p>Expert guidance through regulatory complexities, AOC certification, and ongoing compliance to keep your operations running smoothly.</p>",
+    "image": {
+      "src": "/images/figma/consultancy/imgImg6.png",
+      "alt": "Aviation consultants in an airport meeting room"
+    },
+    "button": {
+      "label": "",
+      "href": ""
+    }
+  },
+  "services": [
+    {
+      "id": "aoc-setup",
+      "heading": "Flight Operations (AOC Setup & Compliance)",
+      "body": "<p>We guide operators through the complete Air Operator Certificate (AOC) setup process, ensuring full compliance with EASA, ICAO, and national aviation authority requirements. From initial documentation to operational readiness inspections, our team provides end-to-end support to get your airline certified and operational.</p>",
+      "image": {
+        "src": "/images/figma/consultancy/imgImg36.png",
+        "alt": "Flight Operations (AOC Setup & Compliance) — aviation operations"
+      },
+      "button": {
+        "label": "Start Your AOC Setup",
+        "href": "/contact/?service=Consultancy"
+      },
+      "filled": true
+    },
+    {
+      "id": "regulatory-gap-analysis",
+      "heading": "Regulatory Gap Analysis",
+      "body": "<p>Our comprehensive gap analysis identifies areas where your operations may fall short of regulatory requirements. We deliver actionable recommendations with clear timelines to achieve full compliance, reducing risk and enhancing operational confidence. Every finding comes with a practical remediation plan tailored to your operational reality.</p>",
+      "image": {
+        "src": "/images/figma/consultancy/imgImg73.png",
+        "alt": "Regulatory Gap Analysis — aviation operations"
+      },
+      "button": {
+        "label": "Request a Gap Analysis",
+        "href": "/contact/?service=Consultancy"
+      },
+      "filled": false
+    },
+    {
+      "id": "authority-advisory",
+      "heading": "Civil Aviation Authority (CAA/NAA) Advisory Support",
+      "body": "<p>We act as your liaison with Civil Aviation Authorities and National Aviation Authorities, providing expert guidance on regulatory submissions, exemption requests, and compliance reporting. Our team includes former CAA inspectors who understand exactly how authorities think and what they expect from operators.</p>",
+      "image": {
+        "src": "/images/figma/consultancy/imgImg76.png",
+        "alt": "Civil Aviation Authority (CAA/NAA) Advisory Support — aviation operations"
+      },
+      "button": {
+        "label": "Speak with an Advisor",
+        "href": "/contact/?service=Consultancy"
+      },
+      "filled": false
+    }
+  ],
+  "feature": {
+    "eyebrow": "Our Approach",
+    "heading": "Regulatory Expertise Meets Practical Operations",
+    "body": "<p>We do not just interpret regulations. We help you implement them in a way that works for your operation. Our team includes former CAA inspectors and airline operations managers who understand both sides of the regulatory equation.</p><p>Whether you are navigating a new jurisdiction, responding to a regulatory change, or preparing for an audit, we provide actionable guidance that keeps you compliant and operational.</p>",
+    "image": {
+      "src": "/images/figma/consultancy/imgImg100.png",
+      "alt": "Aviation regulatory documentation on a desk"
+    },
+    "button": {
+      "label": "",
+      "href": ""
+    },
+    "stats": [
+      {
+        "value": "98%",
+        "label": "First-Time AOC Success"
+      },
+      {
+        "value": "40+",
+        "label": "Countries Served"
+      }
+    ]
+  }
+}

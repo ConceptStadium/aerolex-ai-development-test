@@ -1,0 +1,5 @@
+---
+interface Props { href:string; label:string; variant?:'filled'|'outline'|'light'; download?:boolean; }
+const {href,label,variant='filled',download=false}=Astro.props;
+---
+<a href={href} class:list={['button',`button-${variant}`]} download={download || undefined}>{label}</a>

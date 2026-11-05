@@ -1,0 +1,11 @@
+---
+import RichText from './RichText.astro';
+import Button from './Button.astro';
+import type {FeatureContent} from '../lib/content';
+interface Props {content:FeatureContent;reverse?:boolean;service?:boolean;filled?:boolean;id?:string}
+const {content,reverse=false,service=false,filled=false,id}=Astro.props;
+---
+<div id={id} class:list={['split-section',{'split-reverse':reverse,'service-row':service}]}>
+  <img class="section-image" src={content.image.src} alt={content.image.alt} loading="lazy" />
+  <div class="split-copy">{content.eyebrow&&<p class="eyebrow">{content.eyebrow}</p>}<h2>{content.heading}</h2><RichText content={content.body}/>{content.button.href&&<Button {...content.button} variant={filled?'filled':'outline'}/>}{!!content.stats?.length&&<div class="small-stats">{content.stats.map(stat=><div><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div>}</div>
+</div>
