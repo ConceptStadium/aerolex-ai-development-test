@@ -58,14 +58,14 @@ See [Pages CMS setup and editor guide](docs/PAGES-CMS-SETUP.md) for the reposito
 
 `.pages.yml` maps ten JSON files and three collections, including nested objects/lists, rich text and image uploads. Configuration was reviewed against the official [content](https://pagescms.org/docs/configuration/content/), [fields](https://pagescms.org/docs/configuration/content/fields/) and [filename](https://pagescms.org/docs/configuration/content/filename/) documentation. `npm run validate` checks the JSON-to-field mapping, field types, image files, URL formats, dates, slugs, form fields and blog categories. Build-time Zod schemas add course/post/navigation validation.
 
-After approval to create or push a repository:
+The private repository is [ConceptStadium/aerolex-ai-development-test](https://github.com/ConceptStadium/aerolex-ai-development-test), branch `main`. To complete CMS connection:
 
 1. Connect the intended GitHub repository and branch to Pages CMS with appropriate access.
 2. Test editing a heading and rich-text section, uploading an image, and creating a course/article with a unique slug.
 3. Test draft visibility and list ordering. Pull the committed JSON and image changes locally.
 4. Run `npm run check`, `npm run build`, and `npm run test:routes`; inspect the resulting pages.
 
-CMS edits commit to GitHub. The CMS is not claimed operational until this round trip succeeds. No remote repository, push or deployment was performed.
+CMS edits commit to GitHub. The CMS is not claimed operational until this round trip succeeds. The repository has been pushed with approval. No deployment was configured.
 
 ## Contact form
 

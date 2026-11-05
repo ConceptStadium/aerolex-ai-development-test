@@ -2,9 +2,7 @@
 
 ## Repository readiness
 
-Local Git is initialized on `master`, but there are no commits or configured remotes. This project is not connected to GitHub. An unconnected repository might exist elsewhere; none is identified locally.
-
-Proposed repository: `aerolex-ai-development-test`, **Private**, with initial branch `main`. The owner (personal account or organization) is still to be chosen. After explicit approval: create the private repository, make the initial commit, add the remote and push. If an existing repository is supplied instead, inspect its history first. No repository was created, no push was performed, and no deployment is configured.
+The project is committed and pushed to the private repository https://github.com/ConceptStadium/aerolex-ai-development-test on `main`. Ownership was transferred from Levani1111 to ConceptStadium with approval, and the local `origin` remote points to the organization repository. Pages CMS sign-in, repository authorization and live editing tests remain pending. No deployment is configured.
 
 `.gitignore` excludes dependencies, build output, Astro caches and local environment secrets. Public assets total approximately 5.2 MB; none exceeds 50 MB. GitHub Actions checks types, validates content, builds and tests local links only. WordPress is unchanged.
 
@@ -24,11 +22,11 @@ All 25 website JSON documents match CMS field definitions. The additional `src/c
 
 Images upload into `public/images/` and save `/images/...` references. Filenames are made URL-safe. Use unique filenames and meaningful alternative text. Image fields support uploads; rich-text bodies support formatting but currently do not allow embedded image uploads.
 
-## Connection and login — after approval and initial push
+## Connection and login
 
 1. Open https://app.pagescms.org and sign in with GitHub using an account with access to the intended repository.
 2. Install the Pages CMS GitHub App on the account/organization that owns the repository. Choose Only select repositories and select this private test repository. An organization owner may need to approve installation.
-3. Open the repository and intended editing branch (`main` if created as proposed).
+3. Open the repository and intended editing branch (`main`).
 4. Pages CMS should load the existing root `.pages.yml`; do not replace it with a generic starter. If prompted to create configuration, check the selected repository and branch.
 5. Confirm all editor sections listed above appear. If the repository is absent, check the GitHub App's selected repositories and your account access.
 
