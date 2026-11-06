@@ -1,0 +1,14 @@
+# Deploy only the Astro frontend; keep the local CMS separate.
+local-cms/
+.env
+.env.*
+**/.env
+**/.env.*
+.git/
+.github/
+.vscode/
+node_modules/
+dist/
+.astro/
+*.log
+.DS_Store

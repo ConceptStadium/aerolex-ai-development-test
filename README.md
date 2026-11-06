@@ -1,6 +1,8 @@
 # Aerolex AI Development Test
 
-Static Astro, TypeScript and Tailwind website based on all nine page designs in [Aerolex Figma](https://www.figma.com/design/YWSo7zk37zCZjqXJZFcYLT/Aerolex-Website-Design). No React, database or deployment integration.
+Current experiment: **local Directus**, with reviewed source stored in the private GitHub repository; no deployment is active. See [local CMS instructions](docs/LOCAL-DIRECTUS.md). The Pages CMS section below documents the earlier, paused approach.
+
+Static Astro, TypeScript and Tailwind website based on all nine page designs in [Aerolex Figma](https://www.figma.com/design/YWSo7zk37zCZjqXJZFcYLT/Aerolex-Website-Design). No React or database is required by the Astro frontend.
 
 ## Development
 
@@ -77,4 +79,8 @@ Production delivery needs an approved server endpoint (for example on the existi
 
 All nine desktop frames were accessible; no separate mobile or tablet frames were found. Responsive layouts are adaptations of those desktop designs. The Figma source itself contains lorem ipsum, six repeated “Course Name” cards, duplicate blog titles, fictional team/sample contact information and inconsistent article/listing copy. These are preserved for design comparison, not represented as verified business content. Replace them with approved editorial content before launch. Social URLs and legal documents were not supplied: social icons are unlinked and legal routes explicitly state that approved policy content is missing.
 
-Assets and content came from Figma rather than generated replacement imagery. Design inventory is in `docs/figma-inventory.json`. See `docs/QA.md` for checks and remaining browser verification. Static hosting can serve `dist/` in future; host/domain/deployment settings are intentionally unconfigured.
+Assets and content came from Figma rather than generated replacement imagery. Design inventory is in `docs/figma-inventory.json`. See `docs/QA.md` for checks and remaining browser verification. Static hosting can serve `dist/` in future; frontend build settings are prepared, while hosting and domain connections remain inactive.
+
+## Vercel preparation
+
+See [Vercel build settings and account requirements](docs/VERCEL.md). Static frontend configuration is prepared; deployment is not activated. Directus runtime and private state stay separate.

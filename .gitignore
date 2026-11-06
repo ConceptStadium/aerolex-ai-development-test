@@ -23,3 +23,19 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Local-only Directus experiment: never publish state or credentials
+local-cms/database/
+local-cms/uploads/
+local-cms/backups/
+local-cms/.npm-cache/
+local-cms/.tmp/
+local-cms/*.log
+local-cms/*.pid
+local-cms/state.json
+
+local-cms/.pm2/
+local-cms/LOGIN.txt
+
+# Vercel local account/project metadata
+.vercel/

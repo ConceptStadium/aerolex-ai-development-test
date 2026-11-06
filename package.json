@@ -13,7 +13,16 @@
     "validate": "node scripts/validate.mjs",
     "check": "astro check",
     "prebuild": "npm run validate",
-    "test:routes": "python3 scripts/check-routes.py"
+    "test:routes": "python3 scripts/check-routes.py",
+    "cms:start": "node local-cms/manage.mjs start",
+    "cms:stop": "node local-cms/manage.mjs stop",
+    "cms:status": "node local-cms/manage.mjs status",
+    "cms:seed": "node local-cms/content.mjs seed",
+    "cms:sync": "node local-cms/content.mjs sync",
+    "cms:watch": "node local-cms/content.mjs watch",
+    "cms:test": "node local-cms/test.mjs",
+    "cms:watch-start": "node local-cms/watch.mjs start",
+    "cms:watch-stop": "node local-cms/watch.mjs stop"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.4",
